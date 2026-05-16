@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="Form">
+            <h1 id="Title">Registration Form</h1>
+            <p id="Text">Please fill in the form below to create an account.</p>
+            
+            <div class="input-group">
+                <label for="Name">Name</label>
+                <input id="Name" type="text" placeholder="Enter your name">
+                <span class="error-message" id="NameError"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="Email">Email</label>
+                <input id="Email" type="email" placeholder="Enter your email">
+                <span class="error-message" id="EmailError"></span>
+            </div>
+
+            <div class="input-group">
+                <label for="Password">Password</label>
+                <input id="Password" type="password" placeholder="Enter your password">
+                <span class="error-message" id="PasswordError"></span>
+            </div>
+            
+            <button type="submit" id="SubmitBtn" disabled>Register</button>
+            
+            <div id="SuccessMessage" class="success-message" style="display: none;">
+                <p>✓ Qeydiyyat uğurla tamamlandı!</p>
+            </div>
+        </div>
+    </div>
+    <script src="jscript.js"></script>
+</body>
+</html>
